@@ -1,0 +1,102 @@
+:root{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.login-box{
+    
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3rem;
+    padding: 30px;  
+    background-image: url(../images/leftback.jpg);
+    background-size: cover;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+.alert{
+    border: 1px;
+    border-radius: .5rem;
+    padding: 10px 10px;
+    font-size: larger;    
+}
+
+.alert-red{
+    border: red;
+    background-color: rgba(251, 55, 55, 0.758);
+}
+
+.alert-green{
+    border: green;
+    background-color: rgba(55, 251, 124, 0.758);
+}
+
+.shadow{
+    box-shadow: 0px 2px 10px rgba(178, 170, 170, 0.726);
+}
+form{
+    width:80%;
+    padding: 50px;
+}
+
+a{
+    text-decoration: none;
+    margin-left: 30px;
+    color: rgb(40, 125, 237);
+}
+
+button{
+    border-radius: 5px;
+    background-color: rgb(40, 125, 237);
+    color: white;
+    font-weight: bold;
+    border: 0;
+    padding: 10px;
+}
+input{
+   /* border-radius: 6px;
+    border-color: rgb(147, 140, 140);*/
+    margin-top: 10px;
+    border: 0;
+    border-bottom: 2px solid grey;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 2px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    width: 14rem;
+    height: 1.3rem;
+    color: white;
+}
+input:focus{
+    outline-color: none;
+    border: 0;
+    border-bottom: 3px solid gold;
+}
+
+@media screen and (max-width:600px){
+    .login-box{
+        width: 90vw;
+        padding: 10px;
+        height: 70vh;
+        font-size: larger;
+    }
+    form{
+        padding: 20px;
+    }
+    input{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
